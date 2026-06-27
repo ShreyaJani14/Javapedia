@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .nav-link {
+      color: white;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+    .nav-link:hover{
+      transform: scale(1.05);
+      color: rgb(155, 198, 227);
+    }
+    .first {
+      background: linear-gradient(135deg, #023047, #219ebc);
+      height: 90vh;
+    }
+    ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef5f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #219ebc;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005986;
+}
+    /* From Uiverse.io by gharsh11032000 */
+    .cssbuttons-io-button {
+      background-image: linear-gradient(135deg, #edb21c, #f4c289);
+      color: white;
+      font-family: inherit;
+      padding: 0.35em;
+      padding-left: 1.2em;
+      font-size: 17px;
+      border-radius: 10em;
+      border: none;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      height: 2.8em;
+      padding-right: 3.3em;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 500;
+      box-shadow:
+        0 0 1.6em rgba(183, 33, 255, 0.3),
+        0 0 1.6em hsla(191, 98%, 56%, 0.3);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      text-decoration: none;
+    }
+
+    .cssbuttons-io-button .icon {
+      background: white;
+      margin-left: 1em;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.2em;
+      width: 2.2em;
+      border-radius: 10em;
+      right: 0.3em;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .cssbuttons-io-button .icon svg {
+      stroke: #fb8500;
+    }
+
+    .cssbuttons-io-button:hover .icon {
+      width: calc(100% - 0.6em);
+    }
+
+    .cssbuttons-io-button .icon svg {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: #b721ff;
+    }
+
+    .cssbuttons-io-button:hover .icon svg {
+      transform: translateX(0.1em);
+    }
+
+    .cssbuttons-io-button:active .icon {
+      transform: scale(0.9);
+    }
+
+    .navbar-collapse {
+      background-color: #023047;
+      padding: 20px;
+      margin-top: 7px;
+      border-radius: 15px;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .card {
+      padding: 30px;
+      font-size: 20px;
+      background-color: #f1fafd;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0px 10px 25px rgba(2, 48, 71, 0.15);
+      margin-top: 60px;
+    }
+    h1
+    {
+      color: #005986;
+    }
+    /* .card-title {
+      color: #005986;
+    } */
+  </style>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="height: 70px; background-color: #023047"
+    >
+      <!-- <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./java logo4.png" alt="Bootstrap" width="90" height="70">
+    </a>
+  </div> -->
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./java_logo4-removebg-preview.png"
+            alt="Logo"
+            width="90"
+            height="65"
+            class="d-inline-block"
+            style="margin-left: 20px"
+          />
+          <!-- <span class="logo"
+            style="color: white; font-size: 25px; color: #ffb703;"
+            >JAVA</span> -->
+        </a>
+
+        <!-- </div>
+
+      <div class="container-fluid"> -->
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse position-absolute top-0 end-0"
+          style="padding: 10px; padding-right: 70px"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./Home.html"
+                style="color: #edb21c;">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About Java.html">About Java</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cat.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Dictionary.html">Dictionary</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./About Us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="first">
+      <h1
+        class="display-1"
+        style="
+          text-align: center;
+          padding-top: 160px;
+          color: #ffb703;
+          font-weight: 500;
+        "
+      >
+        JAVAPEDIA
+      </h1>
+      <p
+        style="
+          text-align: center;
+          color: white;
+          font-size: 30px;
+          padding-top: 20px;
+        "
+      >
+        Your Complete guide to java terms and concepts
+      </p>
+      <div class="d-flex justify-content-center mt-5">
+        <a class="cssbuttons-io-button" href="#home">
+          Get Started
+
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    
+
+    <div class="container">
+      <div class="card mb-3 ms-4 me-4" id="home">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 style=" margin-top: 150px">Why JAVAPEDIA?</h1>
+              <p>
+                JavaPedia provides a simple and organized platform for learning
+                Java concepts and terminology. Whether you are a beginner or an
+                experienced programmer, JavaPedia helps you quickly find
+                definitions, understand important topics, and strengthen your
+                Java knowledge.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="p-4 bg-info bg-opacity-10 rounded-4 h-100">
+                    <h5>Fast reference</h5>
+                    <p class="mb-0">
+                      Search terms and concepts with minimal navigation.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-4 bg-warning bg-opacity-10 rounded-4 h-100">
+                    <h5>Learn confidently</h5>
+                    <p class="mb-0">
+                      Find explanations that connect theory to real-world use.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 mt-5">
+                  <div class="p-4 bg-primary bg-opacity-10 rounded-4 h-100">
+                    <h5>Modern examples</h5>
+                    <p class="mb-0">
+                      Explore Java in web, mobile, enterprise, and cloud
+                      contexts.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 mt-5">
+                  <div class="p-4 bg-success bg-opacity-10 rounded-4 h-100">
+                    <h5>Career-ready</h5>
+                    <p class="mb-0">
+                      Build knowledge that reflects industry expectations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 style="padding-top: 90px">Applications of Java</h1>
+      <p>
+        Java is a versatile language used across many domains. These
+        applications show where Java continues to power modern software
+      </p>
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h4>Web Applications</h4>
+              <p>Develop dynamic websites and enterprise web applications.</p>
+
+              <h4>Android Applications</h4>
+              <p>Build powerful Android mobile applications.</p>
+
+              <h4>Desktop Applications</h4>
+              <p>Create desktop software using Swing and JavaFX.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+
+              <h4>Enterprise Applications</h4>
+              <p>Develop large-scale business and banking systems.</p>
+
+              <h4>Cloud Computing</h4>
+              <p>Build cloud-based and distributed applications.</p>
+
+              <h4>Game Development</h4>
+              <p>Create 2D and 3D games using Java.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <h1 style="text-align: center;padding-top: 90px;">Features of Java</h1>
+        <p style="text-align: center;">Java delivers stability, security, portability, and readability in one platform.</p>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card h-75">
+     
+      <div class="card-body">
+       
+        <h3>Simple</h3>
+        <p>Java has a simple and easy-to-understand syntax, making it beginner-friendly.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-75">
+      <div class="card-body">
+
+        <h3>Platform Independent</h3>
+        <p>Java follows the "Write Once, Run Anywhere" principle through JVM.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-75">
+      <div class="card-body">
+
+        <h3>Secure</h3>
+        <p>Java provides a secure environment with bytecode verification and exception handling.</p>
+        
+        
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-75">
+      <div class="card-body">
+        
+
+
+        <h3>Robust</h3>
+        <p>Strong memory management and exception handling make Java reliable.</p>
+        
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+    </div>
+
+
+    <footer class="p-5 mt-5" style="background-color: rgb(26, 24, 24);">
+
+
+      <h3 style="color: white;">JavaPedia</h3>
+        <p style="color: white;">Your Complete Guide to
+        Java Terms and Concepts.
+      <br>
+    Built with HTML 5 | CSS3 | Bootstrap 5</p>
+        
+
+      <h4 style="color: white;margin-top: 50px;">Quick Links</h4>
+      <a href="./Home.html" style="color: #edb21c;">Home</a>
+      <span style="color: white;">|</span>
+      <a href="./About Java.html" style="color: #edb21c;">About Java</a>
+      <span style="color: white;">|</span>
+      <a href="./cat.html" style="color: #edb21c;">Categories</a>
+      <span style="color: white;">|</span>
+      <a href="./Dictionary.html" style="color: #edb21c;">Dictionary</a>
+      <span style="color: white;">|</span>
+      <a href="./About Us.html" style="color: #edb21c;">About Us</a>
+
+      <h4 style="color: white;padding-top: 40px;">Team Members</h4>
+      <ul style="color: white;">
+        <li>Dhariya Makwana</li>
+        <li>Rinal Kathrani</li>
+        <li>Shreya Jani</li>
+      </ul>
+
+    </footer>
+
+
+    <footer style="background-color: black;padding: 20px;text-align: center;color: white;">
+          <p>&copy; 2026 JavaPedia | All Rights Reserved</p>
+      </footer>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

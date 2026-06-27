@@ -1,0 +1,125 @@
+body {
+  background: #f4f7fc;
+  font-family: Arial, sans-serif;
+}
+.nav-link:hover {
+  color: rgb(178, 232, 255);
+}
+.page-wrapper {
+  width: 75%;
+  margin: auto;
+}
+.alphabet-heading {
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: #0d6efd;
+  margin: 40px 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef5f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #219ebc;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005986;
+}
+.table-container {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+.terms-table {
+  margin-bottom: 0;
+}
+.terms-table thead {
+  background-color: #0d6efd;
+  color: white;
+  padding: 15px;
+}
+.terms-table tbody td {
+  padding: 15px;
+  vertical-align: middle;
+}
+.terms-table tbody td:first-child {
+  font-weight: bold;
+  color: #0d6efd;
+  width: 40%;
+}
+.terms-table tbody tr:hover {
+  background-color: #e9f2ff;
+}
+.terms-table thead th{
+    background-color: #0d6efd ;
+    color: white ;
+    border: none;
+    padding: 18px;
+}
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:30px;
+}
+.search-box input{
+    width:500px;
+    max-width:80%;
+}
+.page-navigation{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:40px 0 20px;
+}
+.top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+.top-btn:hover{
+    background: #084298;
+    color: white;
+}
+.nav-link {
+      color: white;
+      font-size: 18px;
+    }
+    .first {
+      background: linear-gradient(135deg, #023047, #219ebc);
+      height: 90vh;
+    }
+.navbar-collapse
+    {
+        background-color: #023047;
+        padding: 20px;
+        margin-top: 7px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 9999;
+    }

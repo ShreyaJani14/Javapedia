@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dictionary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .nav-link {
+      color: white;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+    .nav-link:hover{
+      transform: scale(1.05);
+      color: rgb(155, 198, 227);
+    }
+    .navbar-collapse {
+      background-color: #023047;
+      padding: 20px;
+      margin-top: 7px;
+      border-radius: 15px;
+      position: relative;
+      z-index: 9999;
+    }
+    ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef5f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #219ebc;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005986;
+}
+    /* button {
+      border-radius: 70px;
+      width: 55px;
+      height: 55px;
+      font-size: larger;
+      box-shadow: 4px 9px 10px rgba(25, 74, 173, 0.4);
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      margin-left: 10px;
+    } */
+    /* .b1{
+            margin-bottom: 10px;
+        }
+       .b2{
+            margin-bottom: 10px;
+            margin-left: 40px;
+       }
+       .b3{
+            margin-left: 100px;
+       }   */
+
+    .btn
+    {
+      transition: 0.3s ease;
+      background-color: #0e445f;
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+    }
+    .btn:hover{
+      transform: scale(1.07);
+      background-color: rgb(74, 171, 255);
+    }
+
+  </style>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="height: 70px; background-color: #023047"
+    >
+      <!-- <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./java logo4.png" alt="Bootstrap" width="90" height="70">
+    </a>
+  </div> -->
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./java_logo4-removebg-preview.png"
+            alt="Logo"
+            width="90"
+            height="65"
+            class="d-inline-block"
+            style="margin-left: 20px"
+          />
+          <!-- <span class="logo"
+            style="color: white; font-size: 25px; color: #ffb703;"
+            >JAVA</span> -->
+        </a>
+
+        <!-- </div>
+
+      <div class="container-fluid"> -->
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse position-absolute top-0 end-0"
+          style="padding: 10px; padding-right: 70px"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./Home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about_java.html">About Java</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./cat.html">Categories</a>
+            </li>
+    
+
+            <li class="nav-item">
+              <a class="nav-link" style="color: #edb21c;" href="./Dictionary.html">Dictionary</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./About Us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <div>
+      <h1
+        class="display-1"
+        style="
+          text-align: center;
+          padding-top: 100px;
+          color: #5587cd;
+          font-weight: 500;
+        "
+      >
+        DICTIONARY
+      </h1>
+
+      <p
+        style="
+          text-align: center;
+          color: black;
+          font-size: 24px;
+          padding-top: 20px;
+        "
+      >
+        Explore Java Terms from A to Z
+      </p>
+
+      <!-- <form class="d-flex" role="search" style="margin-left: 450px;margin-right: 400px;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success search-btn " type="submit">Search</button>
+      </form> -->
+
+      <!-- <div class="alphabet">
+        <div class="b1">
+          <button type="button">A</button>
+          <button type="button">B</button>
+          <button type="button">C</button>
+          <button type="button">D</button>
+          <button type="button">E</button>
+          <button type="button">F</button>
+          <button type="button">G</button>
+          <button type="button">H</button>
+          <button type="button">I</button>
+          <button type="button">J</button>
+        </div>
+
+        <div class="b2">
+          <button type="button">K</button>
+          <button type="button">L</button>
+          <button type="button">M</button>
+          <button type="button">N</button>
+          <button type="button">O</button>
+          <button type="button">P</button>
+          <button type="button">Q</button>
+          <button type="button">R</button>
+          <button type="button">S</button>
+        </div>
+        <div class="b3">
+          <button type="button">T</button>
+          <button type="button">U</button>
+          <button type="button">V</button>
+          <button type="button">W</button>
+          <button type="button">X</button>
+          <button type="button">Y</button>
+          <button type="button">Z</button>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="button1">
+
+
+      <div class="d-flex justify-content-center mt-5" >
+
+       
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./A.html">A</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./B.html">B</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./C.html">C</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./D.html">D</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./E.html">E</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./F.html">F</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./G.html">G</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./H.html">H</a> 
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./I.html">I</a> 
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./J.html">J</a> 
+
+    </div>
+
+
+    <div class="d-flex justify-content-center mt-3" >
+
+       
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./K.html">K</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./L.html">L</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./M.html">M</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./N.html">N</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./O.html">O</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./P.html">P</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./Q.html">Q</a> 
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./R.html">R</a> 
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./S.html">S</a> 
+       
+
+    </div>
+
+
+    <div class="d-flex justify-content-center mt-3" >
+
+       
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./T.html">T</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./U.html">U</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./V.html">V</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./W.html">W</a>
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./X.html">X</a> 
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./Y.html">Y</a> 
+      <a role="button" class="btn rounded-circle text-light fs-5" href="./Z.html">Z</a>
+
+    </div>
+
+
+    </div>
+<footer class="p-5 mt-5" style="background-color: rgb(26, 24, 24);">
+
+
+      <h3 style="color: white;">JavaPedia</h3>
+        <p style="color: white;">Your Complete Guide to
+        Java Terms and Concepts.
+      <br>
+    Built with HTML 5 | CSS3 | Bootstrap 5</p>
+        
+
+      <h4 style="color: white;margin-top: 50px;">Quick Links</h4>
+      <a href="./Home.html" style="color: #edb21c;">Home</a>
+      <span style="color: white;">|</span>
+      <a href="./about_java.html" style="color: #edb21c;">About Java</a>
+      <span style="color: white;">|</span>
+      <a href="./cat.html" style="color: #edb21c;">Categories</a>
+      <span style="color: white;">|</span>
+      <a href="./Dictionary.html" style="color: #edb21c;">Dictionary</a>
+      <span style="color: white;">|</span>
+      <a href="./About Us.html" style="color: #edb21c;">About Us</a>
+
+      <h4 style="color: white;padding-top: 40px;">Team Members</h4>
+      <ul style="color: white;">
+        <li>Dhariya Makwana</li>
+        <li>Rinal Kathrani</li>
+        <li>Shreya Jani</li>
+      </ul>
+
+    </footer>
+
+
+    <footer style="background-color: black;padding: 20px;text-align: center;color: white;">
+          <p>&copy; 2026 JavaPedia | All Rights Reserved</p>
+      </footer>
+    
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
