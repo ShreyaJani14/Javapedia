@@ -7,81 +7,81 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+/* =========================
+   NAVBAR (Same as Home)
+========================= */
 
-.main-navbar {
-  background: #023047;
-  position: sticky;
-  top: 0;
-  z-index: 1050;
+.main-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1050;
 }
 
-.main-navbar .navbar {
-  background: #023047 !important;
-
-  min-height: 70px;
-  height: 70px;
-
-  padding: 0 !important;
-
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+.main-navbar .navbar{
+    height:70px;
+    background:#023047 !important;
+    padding:0;
 }
 
-.main-navbar .container-fluid {
-  height: 70px;
+.main-navbar .nav-link{
+    color:white;
+    font-size:18px;
+    transition:.3s ease;
 }
 
-.main-navbar .navbar-brand {
-  margin: 0;
-  padding: 0;
+.main-navbar .nav-link:hover{
+    transform:scale(1.05);
+    color:rgb(155,198,227);
 }
 
-.main-navbar .navbar-collapse {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
+.main-navbar .navbar-collapse{
+    background:#023047;
+    padding:20px;
+    margin-top:7px;
+    border-radius:15px;
+    position:relative;
+    z-index:9999;
 }
 
-.main-navbar .nav-link {
-  color: white;
-
-  font-size: 18px;
-
-  margin: 0 4px;
-
-  transition: 0.3s ease;
+.main-navbar .navbar-toggler{
+    background:white;
 }
 
-.main-navbar .nav-link:hover {
-  transform:scale(1.05);
-    color:rgb(161, 215, 251);
+@media(min-width:992px){
+
+.main-navbar .navbar-collapse{
+    background:transparent;
+    padding:10px;
+    margin-top:0;
+    border-radius:0;
+    position:absolute;
+    top:0;
+    right:0;
+    padding-right:70px;
 }
 
-.main-navbar .nav-link.active {
-  color: #ffb703 !important;
-
-  font-weight: 600;
+.main-navbar .navbar-nav{
+    display:flex;
+    align-items:center;
 }
 
-.main-navbar .dropdown-menu {
-  border: none;
-
-  border-radius: 12px;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+.main-navbar .nav-link{
+    padding:8px 12px;
 }
 
-.main-navbar .dropdown-item {
-  transition: 0.3s;
 }
 
-.main-navbar .dropdown-item:hover {
-  background: #219ebc;
+@media(max-width:991.98px){
 
-  color: white;
+.main-navbar .navbar-collapse{
+    position:relative;
 }
 
+.main-navbar .nav-link{
+    padding:12px 0;
+}
+
+}
 .hero-section {
   background: linear-gradient(135deg, #023047, #219ebc);
 
@@ -486,21 +486,6 @@ code {
 }
 
 @media (max-width: 992px) {
-  .main-navbar .navbar-collapse {
-    background:#023047;
-    padding:20px;
-    margin-top:7px;
-    border-radius:15px;
-    position:relative;
-    z-index:9999;
-  }
-
-  .main-navbar .nav-link {
-    padding: 10px 0;
-
-    font-size: 17px;
-  }
-
   .hero-section {
     padding: 90px 20px;
   }
